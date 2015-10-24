@@ -19,25 +19,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[DataManager sharedManager] recognizeImage:[UIImage imageNamed:@"dairy-and-eggs.jpg"]];
-    [self performSegueWithIdentifier:@"displayRecipesSegue" sender:self];
+    self.hasPicked = NO;
+    
 }
 
-- (IBAction)buttonPressed:(id)sender {
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    picker.allowsEditing = NO;
-    picker.delegate = self;
-    [self presentViewController:picker animated:YES completion:nil];
+- (void)viewDidAppear:(BOOL)animated {
+    if(!self.hasPicked) {
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        picker.allowsEditing = NO;
+        picker.delegate = self;
+        [self presentViewController:picker animated:YES completion:nil];
+    }
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker
 didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    self.hasPicked = YES;
     UIImage *image = info[UIImagePickerControllerOriginalImage];
     if (image) {
         [[DataManager sharedManager] recognizeImage:image];
-        [self performSegueWithIdentifier:@"displayRecipesSegue" sender:self];
+        [self dismissViewControllerAnimated:YES completion:^{
+            [self performSegueWithIdentifier:@"displayRecipesSegue" sender:self];
+        }];
     }
 }
 

@@ -11,6 +11,7 @@
 
 @interface ViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
+@property (assign, nonatomic) BOOL hasPicked;
 
 @end
 
