@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Recipe View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecipeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,26 +16,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3It-Wg-MbJ">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6q3-kw-9kk">
+                                <rect key="frame" x="0.0" y="65" width="600" height="535"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BVD-5l-9hb"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Hei-wk-ZzN"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="mk8-Pz-Blb"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3It-Wg-MbJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EVn-Ky-D4V"/>
-                            <constraint firstItem="3It-Wg-MbJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VtI-gr-0bt"/>
+                            <constraint firstItem="6q3-kw-9kk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1gN-ZZ-3cE"/>
+                            <constraint firstItem="6q3-kw-9kk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="E7q-3j-kg6"/>
+                            <constraint firstItem="6q3-kw-9kk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="32.5" id="GA0-Wj-Om2"/>
+                            <constraint firstItem="6q3-kw-9kk" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="HRL-I6-p1m"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="6q3-kw-9kk" id="ejk-Jm-8JU"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="6Nx-CT-Coo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="185" y="396"/>
+            <point key="canvasLocation" x="825" y="1107"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FqN-ts-DmV">
+            <objects>
+                <viewController id="a5N-ww-tvB" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cj9-Bf-BU7"/>
+                        <viewControllerLayoutGuide type="bottom" id="uRT-ch-O3d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kg1-ba-8HD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="displayRecipesSegue" id="JIZ-Z9-Jgp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cEj-TS-en6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80" y="1107"/>
         </scene>
     </scenes>
 </document>

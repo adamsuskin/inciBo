@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "ClarifaiClient.h"
+#import "RecipeViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
 
 @end
 

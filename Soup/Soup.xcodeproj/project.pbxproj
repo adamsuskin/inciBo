@@ -22,6 +22,12 @@
 		66EE9A7A1BDBBF41009BE01E /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A741BDBBF41009BE01E /* CJSONDeserializer.m */; settings = {ASSET_TAGS = (); }; };
 		66EE9A7B1BDBBF41009BE01E /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A761BDBBF41009BE01E /* CJSONSerializer.m */; settings = {ASSET_TAGS = (); }; };
 		66EE9A7C1BDBBF41009BE01E /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A791BDBBF41009BE01E /* NSDictionary_JSONExtensions.m */; settings = {ASSET_TAGS = (); }; };
+		66EE9A7F1BDBC6F6009BE01E /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A7E1BDBC6F6009BE01E /* RecipeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		66EE9A821BDBC891009BE01E /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A811BDBC891009BE01E /* Recipe.m */; settings = {ASSET_TAGS = (); }; };
+		66EE9A841BDBC944009BE01E /* RecipeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66EE9A831BDBC944009BE01E /* RecipeTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		66EE9A871BDBCA02009BE01E /* RecipeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A861BDBCA02009BE01E /* RecipeTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		66EE9A8A1BDBDE84009BE01E /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A891BDBDE84009BE01E /* DataManager.m */; settings = {ASSET_TAGS = (); }; };
+		66EE9A8E1BDBED27009BE01E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A8D1BDBED27009BE01E /* WebViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +55,18 @@
 		66EE9A771BDBBF41009BE01E /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
 		66EE9A781BDBBF41009BE01E /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
 		66EE9A791BDBBF41009BE01E /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		66EE9A7D1BDBC6F6009BE01E /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
+		66EE9A7E1BDBC6F6009BE01E /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
+		66EE9A801BDBC891009BE01E /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		66EE9A811BDBC891009BE01E /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		66EE9A831BDBC944009BE01E /* RecipeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecipeTableViewCell.xib; sourceTree = "<group>"; };
+		66EE9A851BDBCA02009BE01E /* RecipeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeTableViewCell.h; sourceTree = "<group>"; };
+		66EE9A861BDBCA02009BE01E /* RecipeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeTableViewCell.m; sourceTree = "<group>"; };
+		66EE9A881BDBDE84009BE01E /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		66EE9A891BDBDE84009BE01E /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		66EE9A8B1BDBE9D8009BE01E /* DataSubscriber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataSubscriber.h; sourceTree = "<group>"; };
+		66EE9A8C1BDBED27009BE01E /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		66EE9A8D1BDBED27009BE01E /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		9A0B3CAF1951B74DD18BFA3B /* Pods-Soup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soup.release.xcconfig"; path = "Pods/Target Support Files/Pods-Soup/Pods-Soup.release.xcconfig"; sourceTree = "<group>"; };
 		BBEB22F2F7B921B3209CE296 /* libPods-Soup.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Soup.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,6 +109,18 @@
 				66EE9A671BDB7CAA009BE01E /* dairy-and-eggs.jpg */,
 				66EE9A4E1BDB6AB8009BE01E /* AppDelegate.h */,
 				66EE9A4F1BDB6AB8009BE01E /* AppDelegate.m */,
+				66EE9A801BDBC891009BE01E /* Recipe.h */,
+				66EE9A811BDBC891009BE01E /* Recipe.m */,
+				66EE9A8B1BDBE9D8009BE01E /* DataSubscriber.h */,
+				66EE9A881BDBDE84009BE01E /* DataManager.h */,
+				66EE9A891BDBDE84009BE01E /* DataManager.m */,
+				66EE9A8C1BDBED27009BE01E /* WebViewController.h */,
+				66EE9A8D1BDBED27009BE01E /* WebViewController.m */,
+				66EE9A7D1BDBC6F6009BE01E /* RecipeViewController.h */,
+				66EE9A7E1BDBC6F6009BE01E /* RecipeViewController.m */,
+				66EE9A851BDBCA02009BE01E /* RecipeTableViewCell.h */,
+				66EE9A861BDBCA02009BE01E /* RecipeTableViewCell.m */,
+				66EE9A831BDBC944009BE01E /* RecipeTableViewCell.xib */,
 				66EE9A511BDB6AB8009BE01E /* ViewController.h */,
 				66EE9A521BDB6AB8009BE01E /* ViewController.m */,
 				66EE9A621BDB6D39009BE01E /* ClarifaiClient.h */,
@@ -200,6 +230,7 @@
 				66EE9A6A1BDB8B99009BE01E /* foods.txt in Resources */,
 				66EE9A681BDB7CAA009BE01E /* dairy-and-eggs.jpg in Resources */,
 				66EE9A5B1BDB6AB8009BE01E /* LaunchScreen.storyboard in Resources */,
+				66EE9A841BDBC944009BE01E /* RecipeTableViewCell.xib in Resources */,
 				66EE9A581BDB6AB8009BE01E /* Assets.xcassets in Resources */,
 				66EE9A721BDBB9BE009BE01E /* output.txt in Resources */,
 				66EE9A661BDB7C3A009BE01E /* ingredients.jpg in Resources */,
@@ -262,12 +293,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66EE9A7F1BDBC6F6009BE01E /* RecipeViewController.m in Sources */,
+				66EE9A821BDBC891009BE01E /* Recipe.m in Sources */,
 				66EE9A531BDB6AB8009BE01E /* ViewController.m in Sources */,
 				66EE9A641BDB6D39009BE01E /* ClarifaiClient.m in Sources */,
 				66EE9A501BDB6AB8009BE01E /* AppDelegate.m in Sources */,
+				66EE9A871BDBCA02009BE01E /* RecipeTableViewCell.m in Sources */,
 				66EE9A7B1BDBBF41009BE01E /* CJSONSerializer.m in Sources */,
+				66EE9A8E1BDBED27009BE01E /* WebViewController.m in Sources */,
 				66EE9A4D1BDB6AB8009BE01E /* main.m in Sources */,
 				66EE9A7A1BDBBF41009BE01E /* CJSONDeserializer.m in Sources */,
+				66EE9A8A1BDBDE84009BE01E /* DataManager.m in Sources */,
 				66EE9A7C1BDBBF41009BE01E /* NSDictionary_JSONExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

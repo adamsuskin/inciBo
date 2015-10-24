@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AFNetworking/AFNetworking.h>
-#import "ClarifaiClient.h"
-#import "CJSONDeserializer.h"
+#import "DataManager.h"
 
 @interface ViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
