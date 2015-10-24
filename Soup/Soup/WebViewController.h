@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataManager.h"
+@class Recipe;
 
 @interface WebViewController : UIViewController
 
 @property (strong, nonatomic) NSString *url;
 @property (strong, nonatomic) UIWebView *webView;
 @property (strong, nonatomic) UIView *titleView;
+@property (strong, nonatomic) Recipe *recipe;
 
--(id)initWithURL:(NSString *)URL andFrame:(CGRect)frame;
+-(id)initWithRecipe:(Recipe *)recipe andFrame:(CGRect)frame;
 
 @end

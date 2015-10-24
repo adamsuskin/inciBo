@@ -48,7 +48,6 @@
         [recipe setPublisher:[recipeDict valueForKey:@"publisher"]];
         [recipe setSource_url:[recipeDict valueForKey:@"source_url"]];
         [recipe setImage_url:[recipeDict valueForKey:@"image_url"]];
-        
         [self.recipes addObject:recipe];
     }
     

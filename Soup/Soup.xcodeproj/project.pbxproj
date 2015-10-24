@@ -15,10 +15,8 @@
 		66EE9A581BDB6AB8009BE01E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66EE9A571BDB6AB8009BE01E /* Assets.xcassets */; };
 		66EE9A5B1BDB6AB8009BE01E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66EE9A591BDB6AB8009BE01E /* LaunchScreen.storyboard */; };
 		66EE9A641BDB6D39009BE01E /* ClarifaiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A631BDB6D39009BE01E /* ClarifaiClient.m */; settings = {ASSET_TAGS = (); }; };
-		66EE9A661BDB7C3A009BE01E /* ingredients.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66EE9A651BDB7C3A009BE01E /* ingredients.jpg */; settings = {ASSET_TAGS = (); }; };
 		66EE9A681BDB7CAA009BE01E /* dairy-and-eggs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66EE9A671BDB7CAA009BE01E /* dairy-and-eggs.jpg */; settings = {ASSET_TAGS = (); }; };
 		66EE9A6A1BDB8B99009BE01E /* foods.txt in Resources */ = {isa = PBXBuildFile; fileRef = 66EE9A691BDB8B99009BE01E /* foods.txt */; settings = {ASSET_TAGS = (); }; };
-		66EE9A721BDBB9BE009BE01E /* output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 66EE9A711BDBB9BE009BE01E /* output.txt */; settings = {ASSET_TAGS = (); }; };
 		66EE9A7A1BDBBF41009BE01E /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A741BDBBF41009BE01E /* CJSONDeserializer.m */; settings = {ASSET_TAGS = (); }; };
 		66EE9A7B1BDBBF41009BE01E /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A761BDBBF41009BE01E /* CJSONSerializer.m */; settings = {ASSET_TAGS = (); }; };
 		66EE9A7C1BDBBF41009BE01E /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A791BDBBF41009BE01E /* NSDictionary_JSONExtensions.m */; settings = {ASSET_TAGS = (); }; };
@@ -28,6 +26,10 @@
 		66EE9A871BDBCA02009BE01E /* RecipeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A861BDBCA02009BE01E /* RecipeTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		66EE9A8A1BDBDE84009BE01E /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A891BDBDE84009BE01E /* DataManager.m */; settings = {ASSET_TAGS = (); }; };
 		66EE9A8E1BDBED27009BE01E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A8D1BDBED27009BE01E /* WebViewController.m */; settings = {ASSET_TAGS = (); }; };
+		66EE9A931BDBF0BB009BE01E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A911BDBF0BB009BE01E /* Model.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		66EE9A9A1BDBF9AD009BE01E /* Star-Empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 66EE9A981BDBF9AD009BE01E /* Star-Empty.png */; settings = {ASSET_TAGS = (); }; };
+		66EE9A9B1BDBF9AD009BE01E /* Star-Full.png in Resources */ = {isa = PBXBuildFile; fileRef = 66EE9A991BDBF9AD009BE01E /* Star-Full.png */; settings = {ASSET_TAGS = (); }; };
+		66FE51201BDC124E00C816E7 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FE511F1BDC124E00C816E7 /* back.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,10 +46,8 @@
 		66EE9A5C1BDB6AB8009BE01E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66EE9A621BDB6D39009BE01E /* ClarifaiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClarifaiClient.h; sourceTree = "<group>"; };
 		66EE9A631BDB6D39009BE01E /* ClarifaiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClarifaiClient.m; sourceTree = "<group>"; };
-		66EE9A651BDB7C3A009BE01E /* ingredients.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ingredients.jpg; sourceTree = "<group>"; };
 		66EE9A671BDB7CAA009BE01E /* dairy-and-eggs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dairy-and-eggs.jpg"; sourceTree = "<group>"; };
 		66EE9A691BDB8B99009BE01E /* foods.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = foods.txt; sourceTree = "<group>"; };
-		66EE9A711BDBB9BE009BE01E /* output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output.txt; sourceTree = "<group>"; };
 		66EE9A731BDBBF41009BE01E /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
 		66EE9A741BDBBF41009BE01E /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
 		66EE9A751BDBBF41009BE01E /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
@@ -67,6 +67,11 @@
 		66EE9A8B1BDBE9D8009BE01E /* DataSubscriber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataSubscriber.h; sourceTree = "<group>"; };
 		66EE9A8C1BDBED27009BE01E /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		66EE9A8D1BDBED27009BE01E /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		66EE9A8F1BDBF08D009BE01E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		66EE9A921BDBF0BB009BE01E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		66EE9A981BDBF9AD009BE01E /* Star-Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star-Empty.png"; sourceTree = "<group>"; };
+		66EE9A991BDBF9AD009BE01E /* Star-Full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star-Full.png"; sourceTree = "<group>"; };
+		66FE511F1BDC124E00C816E7 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		9A0B3CAF1951B74DD18BFA3B /* Pods-Soup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soup.release.xcconfig"; path = "Pods/Target Support Files/Pods-Soup/Pods-Soup.release.xcconfig"; sourceTree = "<group>"; };
 		BBEB22F2F7B921B3209CE296 /* libPods-Soup.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Soup.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,7 +109,9 @@
 		66EE9A4A1BDB6AB8009BE01E /* Soup */ = {
 			isa = PBXGroup;
 			children = (
-				66EE9A651BDB7C3A009BE01E /* ingredients.jpg */,
+				66FE511F1BDC124E00C816E7 /* back.png */,
+				66EE9A981BDBF9AD009BE01E /* Star-Empty.png */,
+				66EE9A991BDBF9AD009BE01E /* Star-Full.png */,
 				66EE9A691BDB8B99009BE01E /* foods.txt */,
 				66EE9A671BDB7CAA009BE01E /* dairy-and-eggs.jpg */,
 				66EE9A4E1BDB6AB8009BE01E /* AppDelegate.h */,
@@ -126,7 +133,6 @@
 				66EE9A621BDB6D39009BE01E /* ClarifaiClient.h */,
 				66EE9A631BDB6D39009BE01E /* ClarifaiClient.m */,
 				66EE9A541BDB6AB8009BE01E /* Main.storyboard */,
-				66EE9A711BDBB9BE009BE01E /* output.txt */,
 				66EE9A571BDB6AB8009BE01E /* Assets.xcassets */,
 				66EE9A591BDB6AB8009BE01E /* LaunchScreen.storyboard */,
 				66EE9A5C1BDB6AB8009BE01E /* Info.plist */,
@@ -138,6 +144,7 @@
 				66EE9A781BDBBF41009BE01E /* NSDictionary_JSONExtensions.h */,
 				66EE9A791BDBBF41009BE01E /* NSDictionary_JSONExtensions.m */,
 				66EE9A4B1BDB6AB8009BE01E /* Supporting Files */,
+				66EE9A911BDBF0BB009BE01E /* Model.xcdatamodeld */,
 			);
 			path = Soup;
 			sourceTree = "<group>";
@@ -162,6 +169,7 @@
 		C5563DCBBBEA13F954BEE7D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66EE9A8F1BDBF08D009BE01E /* CoreData.framework */,
 				BBEB22F2F7B921B3209CE296 /* libPods-Soup.a */,
 			);
 			name = Frameworks;
@@ -227,13 +235,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66EE9A9B1BDBF9AD009BE01E /* Star-Full.png in Resources */,
 				66EE9A6A1BDB8B99009BE01E /* foods.txt in Resources */,
+				66FE51201BDC124E00C816E7 /* back.png in Resources */,
 				66EE9A681BDB7CAA009BE01E /* dairy-and-eggs.jpg in Resources */,
 				66EE9A5B1BDB6AB8009BE01E /* LaunchScreen.storyboard in Resources */,
 				66EE9A841BDBC944009BE01E /* RecipeTableViewCell.xib in Resources */,
 				66EE9A581BDB6AB8009BE01E /* Assets.xcassets in Resources */,
-				66EE9A721BDBB9BE009BE01E /* output.txt in Resources */,
-				66EE9A661BDB7C3A009BE01E /* ingredients.jpg in Resources */,
+				66EE9A9A1BDBF9AD009BE01E /* Star-Empty.png in Resources */,
 				66EE9A561BDB6AB8009BE01E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +313,7 @@
 				66EE9A4D1BDB6AB8009BE01E /* main.m in Sources */,
 				66EE9A7A1BDBBF41009BE01E /* CJSONDeserializer.m in Sources */,
 				66EE9A8A1BDBDE84009BE01E /* DataManager.m in Sources */,
+				66EE9A931BDBF0BB009BE01E /* Model.xcdatamodeld in Sources */,
 				66EE9A7C1BDBBF41009BE01E /* NSDictionary_JSONExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +468,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		66EE9A911BDBF0BB009BE01E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				66EE9A921BDBF0BB009BE01E /* Model.xcdatamodel */,
+			);
+			currentVersion = 66EE9A921BDBF0BB009BE01E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 66EE9A401BDB6AB8009BE01E /* Project object */;
 }

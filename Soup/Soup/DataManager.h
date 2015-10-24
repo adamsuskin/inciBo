@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AFNetworking/AFNetworking.h>
+#import "AppDelegate.h"
 #import "ClarifaiClient.h"
 #import "Recipe.h"
 #import "DataSubscriber.h"

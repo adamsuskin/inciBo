@@ -7,6 +7,7 @@
 //
 
 #import "WebViewController.h"
+#import "Recipe.h"
 
 @interface WebViewController ()
 
@@ -14,10 +15,11 @@
 
 @implementation WebViewController
 
--(id)initWithURL:(NSString *)URL andFrame:(CGRect)frame {
+-(id)initWithRecipe:(Recipe *)recipe andFrame:(CGRect)frame {
     self = [super init];
     if(self) {
-        self.url = URL;
+        self.recipe = recipe;
+        self.url = [self.recipe source_url];
         self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + 75, frame.size.width, frame.size.height - 75)];
         [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.url]]];
         self.view = [[UIView alloc] initWithFrame:frame];
@@ -25,10 +27,21 @@
         [self.view addSubview:self.webView];
         
         self.titleView = [[UIView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + 10, frame.size.width, 65)];
-        self.titleView.backgroundColor = [UIColor redColor];
+        self.titleView.backgroundColor = [UIColor lightGrayColor];
+        
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        [button setBackgroundImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
+        [button setFrame:CGRectMake(10, 10, 45, 45)];
+        [button addTarget:self action:@selector(back:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [self.titleView addSubview:button];
         [self.view addSubview:self.titleView];
     }
     return self;
+}
+
+-(void)back:(id)sender {
+    [[self presentingViewController] dismissViewControllerAnimated:YES completion:^{}];
 }
 
 - (void)viewDidLoad {
