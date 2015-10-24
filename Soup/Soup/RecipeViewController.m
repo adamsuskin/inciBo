@@ -45,6 +45,19 @@
 
 #pragma mark - Table View Data Source
 
+-(void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    CATransform3D transform = CATransform3DTranslate([[cell layer] transform], -30, 0, 0);
+    cell.layer.transform = transform;
+    cell.alpha = 0;
+
+    
+    [UIView beginAnimations:@"transform" context:NULL];
+    [UIView setAnimationDuration:0.8];
+    cell.layer.transform = CATransform3DIdentity;
+    cell.alpha = 1;
+    [UIView commitAnimations];
+}
+
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //    return [[[DataManager sharedManager] recipes] count];
     return 1;

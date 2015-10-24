@@ -36,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		131481BA8028A63D8F69C57C /* Pods-Soup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Soup/Pods-Soup.debug.xcconfig"; sourceTree = "<group>"; };
-		66EE9A481BDB6AB8009BE01E /* Soup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66EE9A481BDB6AB8009BE01E /* inciBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inciBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66EE9A4C1BDB6AB8009BE01E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66EE9A4E1BDB6AB8009BE01E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66EE9A4F1BDB6AB8009BE01E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 		66EE9A491BDB6AB8009BE01E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66EE9A481BDB6AB8009BE01E /* Soup.app */,
+				66EE9A481BDB6AB8009BE01E /* inciBo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,9 +184,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		66EE9A471BDB6AB8009BE01E /* Soup */ = {
+		66EE9A471BDB6AB8009BE01E /* inciBo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66EE9A5F1BDB6AB8009BE01E /* Build configuration list for PBXNativeTarget "Soup" */;
+			buildConfigurationList = 66EE9A5F1BDB6AB8009BE01E /* Build configuration list for PBXNativeTarget "inciBo" */;
 			buildPhases = (
 				20BF1042B5B5CA47BA9B088F /* Check Pods Manifest.lock */,
 				66EE9A441BDB6AB8009BE01E /* Sources */,
@@ -199,9 +199,9 @@
 			);
 			dependencies = (
 			);
-			name = Soup;
+			name = inciBo;
 			productName = Soup;
-			productReference = 66EE9A481BDB6AB8009BE01E /* Soup.app */;
+			productReference = 66EE9A481BDB6AB8009BE01E /* inciBo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -218,7 +218,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 66EE9A431BDB6AB8009BE01E /* Build configuration list for PBXProject "Soup" */;
+			buildConfigurationList = 66EE9A431BDB6AB8009BE01E /* Build configuration list for PBXProject "inciBo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -231,7 +231,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66EE9A471BDB6AB8009BE01E /* Soup */,
+				66EE9A471BDB6AB8009BE01E /* inciBo */,
 			);
 		};
 /* End PBXProject section */
@@ -438,7 +438,7 @@
 				INFOPLIST_FILE = Soup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamsuskin.Soup;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = inciBo;
 			};
 			name = Debug;
 		};
@@ -450,14 +450,14 @@
 				INFOPLIST_FILE = Soup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamsuskin.Soup;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = inciBo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		66EE9A431BDB6AB8009BE01E /* Build configuration list for PBXProject "Soup" */ = {
+		66EE9A431BDB6AB8009BE01E /* Build configuration list for PBXProject "inciBo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66EE9A5D1BDB6AB8009BE01E /* Debug */,
@@ -466,7 +466,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66EE9A5F1BDB6AB8009BE01E /* Build configuration list for PBXNativeTarget "Soup" */ = {
+		66EE9A5F1BDB6AB8009BE01E /* Build configuration list for PBXNativeTarget "inciBo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66EE9A601BDB6AB8009BE01E /* Debug */,

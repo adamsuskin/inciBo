@@ -18,14 +18,25 @@
 -(id)initWithRecipe:(Recipe *)recipe andFrame:(CGRect)frame {
     self = [super init];
     if(self) {
+        self.view.backgroundColor = [UIColor colorWithRed:189.f/255.f green:62.f/255.f blue:56.f/255.f alpha:1];
+        
+        self.activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        [self.activityView setColor:[UIColor blackColor]];
+        
+        CGRect currFrame = [self.activityView frame];
+        [self.activityView setFrame:CGRectMake(self.view.center.x - (currFrame.size.width/2), self.view.center.y - (currFrame.size.height/2), currFrame.size.width, currFrame.size.height)];
+        [self.activityView startAnimating];
+        
         self.recipe = recipe;
         self.url = [self.recipe source_url];
         self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + 75, frame.size.width, frame.size.height - 75)];
+        self.webView.delegate = self;
         [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.url]]];
         self.view = [[UIView alloc] initWithFrame:frame];
-        self.view.backgroundColor = [UIColor colorWithRed:1 green:88.f/255.f blue:79.f/255.f alpha:1];
+        self.webView.backgroundColor = [UIColor clearColor];
         [self.view addSubview:self.webView];
-        
+        [self.view addSubview:self.activityView];
+
         
         self.titleView = [[UIView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, 75)];
         self.titleView.backgroundColor = [UIColor colorWithRed:1 green:88.f/255.f blue:79.f/255.f alpha:1];
@@ -44,8 +55,19 @@
         [self.titleView addSubview:button];
         [self.titleView addSubview:recipeLabel];
         [self.view addSubview:self.titleView];
+
     }
     return self;
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView {
+    [self.activityView stopAnimating];
+    self.activityView.hidden = YES;
+}
+
+-(void)webViewDidStartLoad:(UIWebView *)webView {
+    [self.activityView startAnimating];
+    self.activityView.hidden = NO;
 }
 
 -(void)back:(id)sender {

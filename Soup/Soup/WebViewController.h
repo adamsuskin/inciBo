@@ -10,12 +10,13 @@
 #import "DataManager.h"
 @class Recipe;
 
-@interface WebViewController : UIViewController
+@interface WebViewController : UIViewController <UIWebViewDelegate>
 
 @property (strong, nonatomic) NSString *url;
 @property (strong, nonatomic) UIWebView *webView;
 @property (strong, nonatomic) UIView *titleView;
 @property (strong, nonatomic) Recipe *recipe;
+@property (strong, nonatomic) UIActivityIndicatorView *activityView;
 
 -(id)initWithRecipe:(Recipe *)recipe andFrame:(CGRect)frame;
 
