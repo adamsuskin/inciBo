@@ -18,9 +18,15 @@
     self = [super init];
     if(self) {
         self.url = URL;
-        self.webView = [[UIWebView alloc] initWithFrame:frame];
+        self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + 75, frame.size.width, frame.size.height - 75)];
+        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.url]]];
+        self.view = [[UIView alloc] initWithFrame:frame];
+        self.view.backgroundColor = [UIColor whiteColor];
+        [self.view addSubview:self.webView];
         
-        self.view = self.webView;
+        self.titleView = [[UIView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + 10, frame.size.width, 65)];
+        self.titleView.backgroundColor = [UIColor redColor];
+        [self.view addSubview:self.titleView];
     }
     return self;
 }

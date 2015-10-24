@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) NSString *url;
 @property (strong, nonatomic) UIWebView *webView;
+@property (strong, nonatomic) UIView *titleView;
 
 -(id)initWithURL:(NSString *)URL andFrame:(CGRect)frame;
 

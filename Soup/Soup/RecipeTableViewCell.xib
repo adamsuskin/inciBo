@@ -14,7 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeS-UW-7YY">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeS-UW-7YY">
                         <rect key="frame" x="39" y="53" width="189" height="21"/>
                         <animations/>
                         <constraints>
@@ -38,14 +38,9 @@
                             <constraint firstAttribute="width" constant="60" id="RlJ-TU-R46"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3X-Ih-TEg">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3X-Ih-TEg">
                         <rect key="frame" x="39" y="14" width="189" height="31"/>
                         <animations/>
-                        <constraints>
-                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="Vbr-XZ-QmP"/>
-                            <constraint firstAttribute="height" constant="31" id="kkj-55-NHS"/>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="p4I-7h-rsa"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -53,18 +48,16 @@
                 </subviews>
                 <animations/>
                 <constraints>
-                    <constraint firstItem="YeS-UW-7YY" firstAttribute="top" secondItem="P3X-Ih-TEg" secondAttribute="bottom" constant="8" symbolic="YES" id="0sE-tA-SMA"/>
                     <constraint firstItem="jJU-BW-Bwj" firstAttribute="top" secondItem="qb0-qt-VQh" secondAttribute="topMargin" constant="6" id="2y4-lw-bwa"/>
                     <constraint firstAttribute="trailingMargin" secondItem="jJU-BW-Bwj" secondAttribute="trailing" constant="9" id="4pX-14-Vkp"/>
-                    <constraint firstItem="jJU-BW-Bwj" firstAttribute="leading" secondItem="P3X-Ih-TEg" secondAttribute="trailing" constant="15" id="7ya-1S-Tzl"/>
                     <constraint firstAttribute="trailingMargin" secondItem="jJU-BW-Bwj" secondAttribute="trailing" constant="9" id="AG1-7Z-G6r"/>
                     <constraint firstItem="jJU-BW-Bwj" firstAttribute="bottom" secondItem="YeS-UW-7YY" secondAttribute="bottom" id="Awp-vs-tRb"/>
-                    <constraint firstItem="P3X-Ih-TEg" firstAttribute="top" secondItem="jJU-BW-Bwj" secondAttribute="top" id="QTo-Qz-rTW"/>
-                    <constraint firstItem="P3X-Ih-TEg" firstAttribute="leading" secondItem="YeS-UW-7YY" secondAttribute="leading" id="SgH-8V-SU8"/>
-                    <constraint firstItem="P3X-Ih-TEg" firstAttribute="trailing" secondItem="YeS-UW-7YY" secondAttribute="trailing" id="p96-nM-h7g"/>
+                    <constraint firstItem="P3X-Ih-TEg" firstAttribute="leading" secondItem="YeS-UW-7YY" secondAttribute="leading" id="BWq-0o-zun"/>
+                    <constraint firstItem="P3X-Ih-TEg" firstAttribute="leading" secondItem="qb0-qt-VQh" secondAttribute="leadingMargin" constant="31" id="GhU-9N-mBG"/>
+                    <constraint firstItem="P3X-Ih-TEg" firstAttribute="trailing" secondItem="YeS-UW-7YY" secondAttribute="trailing" id="X73-QC-Yyx"/>
+                    <constraint firstItem="P3X-Ih-TEg" firstAttribute="top" secondItem="jJU-BW-Bwj" secondAttribute="top" id="cEO-Ge-iQ8"/>
+                    <constraint firstItem="YeS-UW-7YY" firstAttribute="top" secondItem="P3X-Ih-TEg" secondAttribute="bottom" constant="8" symbolic="YES" id="qb1-SE-GEx"/>
                     <constraint firstItem="jJU-BW-Bwj" firstAttribute="leading" secondItem="YeS-UW-7YY" secondAttribute="trailing" constant="15" id="spD-j0-3Ky"/>
-                    <constraint firstItem="YeS-UW-7YY" firstAttribute="top" secondItem="P3X-Ih-TEg" secondAttribute="bottom" constant="8" id="ufc-6A-D8z"/>
-                    <constraint firstItem="P3X-Ih-TEg" firstAttribute="top" secondItem="qb0-qt-VQh" secondAttribute="topMargin" constant="6" id="yUM-kT-h0d"/>
                 </constraints>
             </tableViewCellContentView>
             <animations/>

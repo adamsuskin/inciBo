@@ -75,11 +75,7 @@
     
     Recipe *recipe = [[[DataManager sharedManager] recipes] objectAtIndex:indexPath.row];
     
-    UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.frame];
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[recipe source_url]]]];
-    
-    UIViewController *viewController = [[UIViewController alloc] init];
-    [viewController setView:webView];
+    WebViewController *viewController = [[WebViewController alloc] initWithURL:[recipe source_url] andFrame:self.tableView.frame];
     
     [self presentViewController:viewController animated:YES completion:^{}];
 }
