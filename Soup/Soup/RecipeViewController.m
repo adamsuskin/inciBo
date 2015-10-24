@@ -13,6 +13,7 @@
 @end
 
 @implementation RecipeViewController
+@synthesize titleView = _titleView;
 @synthesize tableView = _tableView;
 
 - (void)viewDidLoad {
@@ -20,6 +21,10 @@
     
     [[DataManager sharedManager] addToSubscribers:self];
     [[DataManager sharedManager] recognizeImage:[UIImage imageNamed:@"dairy-and-eggs.jpg"]];
+}
+
+- (IBAction)back:(id)sender {
+    [self performSegueWithIdentifier:@"cameraSegue" sender:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -75,7 +80,7 @@
     
     Recipe *recipe = [[[DataManager sharedManager] recipes] objectAtIndex:indexPath.row];
     
-    WebViewController *viewController = [[WebViewController alloc] initWithRecipe:recipe andFrame:self.tableView.frame];
+    WebViewController *viewController = [[WebViewController alloc] initWithRecipe:recipe andFrame:self.view.frame];
     
     [self presentViewController:viewController animated:YES completion:^{}];
 }

@@ -30,6 +30,7 @@
 		66EE9A9A1BDBF9AD009BE01E /* Star-Empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 66EE9A981BDBF9AD009BE01E /* Star-Empty.png */; settings = {ASSET_TAGS = (); }; };
 		66EE9A9B1BDBF9AD009BE01E /* Star-Full.png in Resources */ = {isa = PBXBuildFile; fileRef = 66EE9A991BDBF9AD009BE01E /* Star-Full.png */; settings = {ASSET_TAGS = (); }; };
 		66FE51201BDC124E00C816E7 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FE511F1BDC124E00C816E7 /* back.png */; settings = {ASSET_TAGS = (); }; };
+		66FE51221BDC237B00C816E7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FE51211BDC237B00C816E7 /* Default.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		66EE9A981BDBF9AD009BE01E /* Star-Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star-Empty.png"; sourceTree = "<group>"; };
 		66EE9A991BDBF9AD009BE01E /* Star-Full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star-Full.png"; sourceTree = "<group>"; };
 		66FE511F1BDC124E00C816E7 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		66FE51211BDC237B00C816E7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		9A0B3CAF1951B74DD18BFA3B /* Pods-Soup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soup.release.xcconfig"; path = "Pods/Target Support Files/Pods-Soup/Pods-Soup.release.xcconfig"; sourceTree = "<group>"; };
 		BBEB22F2F7B921B3209CE296 /* libPods-Soup.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Soup.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 		66EE9A4A1BDB6AB8009BE01E /* Soup */ = {
 			isa = PBXGroup;
 			children = (
+				66FE51211BDC237B00C816E7 /* Default.png */,
 				66FE511F1BDC124E00C816E7 /* back.png */,
 				66EE9A981BDBF9AD009BE01E /* Star-Empty.png */,
 				66EE9A991BDBF9AD009BE01E /* Star-Full.png */,
@@ -244,6 +247,7 @@
 				66EE9A581BDB6AB8009BE01E /* Assets.xcassets in Resources */,
 				66EE9A9A1BDBF9AD009BE01E /* Star-Empty.png in Resources */,
 				66EE9A561BDB6AB8009BE01E /* Main.storyboard in Resources */,
+				66FE51221BDC237B00C816E7 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

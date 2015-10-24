@@ -16,6 +16,7 @@
 
 @interface RecipeViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, DataSubscriber>
 
+@property (strong, nonatomic) IBOutlet UIView *titleView;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end

@@ -23,15 +23,15 @@
         self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + 75, frame.size.width, frame.size.height - 75)];
         [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.url]]];
         self.view = [[UIView alloc] initWithFrame:frame];
-        self.view.backgroundColor = [UIColor whiteColor];
+        self.view.backgroundColor = [UIColor colorWithRed:1 green:88.f/255.f blue:79.f/255.f alpha:1];
         [self.view addSubview:self.webView];
         
-        self.titleView = [[UIView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + 10, frame.size.width, 65)];
-        self.titleView.backgroundColor = [UIColor lightGrayColor];
+        self.titleView = [[UIView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, 75)];
+        self.titleView.backgroundColor = [UIColor colorWithRed:1 green:88.f/255.f blue:79.f/255.f alpha:1];
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setBackgroundImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
-        [button setFrame:CGRectMake(10, 10, 45, 45)];
+        [button setFrame:CGRectMake(8, self.titleView.frame.size.height-8-45, 45, 45)];
         [button addTarget:self action:@selector(back:) forControlEvents:UIControlEventTouchUpInside];
         
         [self.titleView addSubview:button];

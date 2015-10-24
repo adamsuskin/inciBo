@@ -17,32 +17,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6q3-kw-9kk">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="75" width="600" height="525"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.74117647058823533" green="0.24313725490196078" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="Hei-wk-ZzN"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="mk8-Pz-Blb"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4fi-e7-6gX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="77"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtz-ke-hMo">
+                                        <rect key="frame" x="8" y="24" width="45" height="45"/>
+                                        <animations/>
+                                        <state key="normal" backgroundImage="back.png"/>
+                                        <connections>
+                                            <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tbh-D5-LX6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6q3-kw-9kk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1gN-ZZ-3cE"/>
                             <constraint firstItem="6q3-kw-9kk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="E7q-3j-kg6"/>
-                            <constraint firstItem="6q3-kw-9kk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="10" id="GA0-Wj-Om2"/>
+                            <constraint firstItem="6q3-kw-9kk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="37.5" id="GA0-Wj-Om2"/>
                             <constraint firstItem="6q3-kw-9kk" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="HRL-I6-p1m"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="6q3-kw-9kk" id="ejk-Jm-8JU"/>
+                        <outlet property="titleView" destination="4fi-e7-6gX" id="qg1-G9-aWl"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="6Nx-CT-Coo"/>
+                        <segue destination="a5N-ww-tvB" kind="show" identifier="cameraSegue" id="ef2-R0-fYZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="825" y="1107"/>
+            <point key="canvasLocation" x="953" y="846"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FqN-ts-DmV">
@@ -67,4 +85,7 @@
             <point key="canvasLocation" x="80" y="1107"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back.png" width="44" height="44"/>
+    </resources>
 </document>
