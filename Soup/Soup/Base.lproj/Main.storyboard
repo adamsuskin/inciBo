@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="a5N-ww-tvB">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Recipe View Controller-->
@@ -26,29 +28,56 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="mk8-Pz-Blb"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4fi-e7-6gX">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="77"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fi-e7-6gX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtz-ke-hMo">
-                                        <rect key="frame" x="8" y="24" width="45" height="45"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtz-ke-hMo">
+                                        <rect key="frame" x="8" y="27" width="45" height="45"/>
                                         <animations/>
-                                        <state key="normal" backgroundImage="back.png"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dtz-ke-hMo" secondAttribute="height" multiplier="1:1" id="dLy-FQ-87c"/>
+                                            <constraint firstAttribute="width" constant="45" id="g5S-tU-eSG"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="backButton.png"/>
                                         <connections>
                                             <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tbh-D5-LX6"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vl2-03-8t2">
+                                        <rect key="frame" x="132" y="26" width="336" height="46"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vl2-03-8t2" secondAttribute="height" multiplier="73:10" id="FqH-JD-AOn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="38"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="vl2-03-8t2" firstAttribute="bottom" secondItem="dtz-ke-hMo" secondAttribute="bottom" id="Qnv-uw-ZHj"/>
+                                    <constraint firstAttribute="bottom" secondItem="dtz-ke-hMo" secondAttribute="bottom" constant="8" id="Wv0-ZO-GMT"/>
+                                    <constraint firstItem="dtz-ke-hMo" firstAttribute="leading" secondItem="4fi-e7-6gX" secondAttribute="leadingMargin" id="h08-xw-0m8"/>
+                                    <constraint firstItem="vl2-03-8t2" firstAttribute="centerX" secondItem="4fi-e7-6gX" secondAttribute="centerX" id="oNb-fC-Xe6"/>
+                                    <constraint firstAttribute="height" constant="80" id="onv-4y-gF5"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6q3-kw-9kk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1gN-ZZ-3cE"/>
-                            <constraint firstItem="6q3-kw-9kk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="E7q-3j-kg6"/>
-                            <constraint firstItem="6q3-kw-9kk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="37.5" id="GA0-Wj-Om2"/>
-                            <constraint firstItem="6q3-kw-9kk" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="HRL-I6-p1m"/>
+                            <constraint firstItem="6q3-kw-9kk" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="3Wl-8D-d2a"/>
+                            <constraint firstItem="6q3-kw-9kk" firstAttribute="leading" secondItem="4fi-e7-6gX" secondAttribute="leading" id="AnS-d6-e9p"/>
+                            <constraint firstItem="4fi-e7-6gX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="DoX-qm-Saa"/>
+                            <constraint firstItem="6q3-kw-9kk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="HKd-lK-aCA"/>
+                            <constraint firstItem="4fi-e7-6gX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="JdP-VZ-EAZ"/>
+                            <constraint firstItem="6q3-kw-9kk" firstAttribute="trailing" secondItem="4fi-e7-6gX" secondAttribute="trailing" id="KwL-dG-uhC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4fi-e7-6gX" secondAttribute="trailing" constant="-20" id="TQC-qg-ECv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6q3-kw-9kk" secondAttribute="trailing" constant="-20" id="VV7-95-Gt6"/>
+                            <constraint firstItem="4fi-e7-6gX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rC3-Jw-P5r"/>
+                            <constraint firstItem="6q3-kw-9kk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="swk-Jw-553"/>
                         </constraints>
                     </view>
                     <connections>
@@ -60,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="953" y="846"/>
+            <point key="canvasLocation" x="953" y="860"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FqN-ts-DmV">
@@ -86,6 +115,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back.png" width="44" height="44"/>
+        <image name="backButton.png" width="80" height="80"/>
     </resources>
 </document>

@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="a31-di-way">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="a31-di-way">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <animations/>
                             </imageView>
@@ -32,6 +32,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Default.png" width="640" height="1136"/>
+        <image name="Background.png" width="640" height="1136"/>
     </resources>
 </document>

@@ -21,6 +21,9 @@
     
     [[DataManager sharedManager] addToSubscribers:self];
     [[DataManager sharedManager] recognizeImage:[UIImage imageNamed:@"dairy-and-eggs.jpg"]];
+    
+    [[self tableView] setBackgroundView:nil];
+    [[self tableView] setBackgroundColor:[UIColor colorWithRed:189.f/255.f green:62.f/255.f blue:58.f/255.f alpha:1]];
 }
 
 - (IBAction)back:(id)sender {
@@ -36,14 +39,27 @@
     [[self tableView] reloadData];
 }
 
+- (UIStatusBarStyle) preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 #pragma mark - Table View Data Source
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//    return [[[DataManager sharedManager] recipes] count];
+    return 1;
+}
+
+-(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
     return [[[DataManager sharedManager] recipes] count];
 }
 
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 88;
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 7;
 }
 
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -55,7 +71,7 @@
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"RecipeTableViewCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
     }
-    Recipe *recipe = [[[DataManager sharedManager] recipes] objectAtIndex:indexPath.row];
+    Recipe *recipe = [[[DataManager sharedManager] recipes] objectAtIndex:indexPath.section];
     
     cell.titleLabel.text = recipe.title;
     cell.publisherLabel.text = recipe.publisher;
@@ -77,7 +93,7 @@
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+        
     Recipe *recipe = [[[DataManager sharedManager] recipes] objectAtIndex:indexPath.row];
     
     WebViewController *viewController = [[WebViewController alloc] initWithRecipe:recipe andFrame:self.view.frame];

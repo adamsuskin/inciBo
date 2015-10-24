@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -15,7 +16,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3X-Ih-TEg">
-                        <rect key="frame" x="76" y="14" width="189" height="31"/>
+                        <rect key="frame" x="76" y="18" width="189" height="27"/>
                         <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -25,8 +26,12 @@
                         <rect key="frame" x="8" y="14" width="60" height="60"/>
                         <animations/>
                         <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="60" id="221-AQ-13n"/>
                             <constraint firstAttribute="height" constant="60" id="9LK-yZ-fkD"/>
+                            <constraint firstAttribute="width" secondItem="jJU-BW-Bwj" secondAttribute="height" multiplier="1:1" id="KoA-B4-iqY"/>
                             <constraint firstAttribute="width" constant="60" id="RlJ-TU-R46"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="ZmN-Tm-Ssz"/>
+                            <constraint firstAttribute="width" secondItem="jJU-BW-Bwj" secondAttribute="height" multiplier="1:1" id="url-fw-ts8"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeS-UW-7YY">
@@ -48,16 +53,14 @@
                 </subviews>
                 <animations/>
                 <constraints>
-                    <constraint firstItem="jJU-BW-Bwj" firstAttribute="top" secondItem="qb0-qt-VQh" secondAttribute="topMargin" constant="6" id="2y4-lw-bwa"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="jJU-BW-Bwj" secondAttribute="trailing" constant="244" id="4pX-14-Vkp"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="jJU-BW-Bwj" secondAttribute="trailing" constant="244" id="AG1-7Z-G6r"/>
-                    <constraint firstItem="jJU-BW-Bwj" firstAttribute="bottom" secondItem="YeS-UW-7YY" secondAttribute="bottom" id="Awp-vs-tRb"/>
-                    <constraint firstItem="P3X-Ih-TEg" firstAttribute="leading" secondItem="YeS-UW-7YY" secondAttribute="leading" id="BWq-0o-zun"/>
-                    <constraint firstItem="P3X-Ih-TEg" firstAttribute="leading" secondItem="qb0-qt-VQh" secondAttribute="leadingMargin" constant="68" id="GhU-9N-mBG"/>
-                    <constraint firstItem="P3X-Ih-TEg" firstAttribute="trailing" secondItem="YeS-UW-7YY" secondAttribute="trailing" id="X73-QC-Yyx"/>
-                    <constraint firstItem="P3X-Ih-TEg" firstAttribute="top" secondItem="jJU-BW-Bwj" secondAttribute="top" id="cEO-Ge-iQ8"/>
-                    <constraint firstItem="YeS-UW-7YY" firstAttribute="top" secondItem="P3X-Ih-TEg" secondAttribute="bottom" constant="8" symbolic="YES" id="qb1-SE-GEx"/>
-                    <constraint firstItem="jJU-BW-Bwj" firstAttribute="leading" secondItem="YeS-UW-7YY" secondAttribute="trailing" constant="-257" id="spD-j0-3Ky"/>
+                    <constraint firstItem="YeS-UW-7YY" firstAttribute="leading" secondItem="jJU-BW-Bwj" secondAttribute="trailing" constant="8" symbolic="YES" id="0Nh-ld-L92"/>
+                    <constraint firstItem="jJU-BW-Bwj" firstAttribute="leading" secondItem="qb0-qt-VQh" secondAttribute="leadingMargin" id="5C3-rz-NV2"/>
+                    <constraint firstItem="YeS-UW-7YY" firstAttribute="trailing" secondItem="P3X-Ih-TEg" secondAttribute="trailing" id="7Qa-LT-pqv"/>
+                    <constraint firstItem="YeS-UW-7YY" firstAttribute="bottom" secondItem="jJU-BW-Bwj" secondAttribute="bottom" id="AMx-8X-1EM"/>
+                    <constraint firstItem="YeS-UW-7YY" firstAttribute="leading" secondItem="P3X-Ih-TEg" secondAttribute="leading" id="MUz-92-dls"/>
+                    <constraint firstItem="YeS-UW-7YY" firstAttribute="top" secondItem="P3X-Ih-TEg" secondAttribute="bottom" constant="8" symbolic="YES" id="aVC-MQ-RDv"/>
+                    <constraint firstItem="jJU-BW-Bwj" firstAttribute="centerY" secondItem="qb0-qt-VQh" secondAttribute="centerY" id="nei-iT-BP3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="YeS-UW-7YY" secondAttribute="trailing" constant="47" id="uzw-0H-kTx"/>
                 </constraints>
             </tableViewCellContentView>
             <animations/>
