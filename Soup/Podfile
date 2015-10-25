@@ -3,5 +3,11 @@ platform :ios, '8.0'
 target 'inciBo' do
 
 	pod 'AFNetworking'
+<<<<<<< HEAD
+=======
+	pod 'FBSDKCoreKit'
+	pod 'FBSDKShareKit'
+	pod 'STTwitter'
+>>>>>>> dev
 
 end

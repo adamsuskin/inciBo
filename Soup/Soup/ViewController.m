@@ -32,6 +32,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    
     if(!self.hasPicked) {
         if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
             

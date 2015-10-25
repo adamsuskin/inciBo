@@ -26,6 +26,7 @@
 }
 
 - (IBAction)back:(id)sender {
+    [[[DataManager sharedManager] recipes] removeAllObjects];
     [self performSegueWithIdentifier:@"cameraSegue" sender:self];
 }
 

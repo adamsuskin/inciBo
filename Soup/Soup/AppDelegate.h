@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "ClarifaiClient.h"
 #import "RecipeViewController.h"
 

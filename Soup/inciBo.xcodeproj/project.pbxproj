@@ -17,9 +17,6 @@
 		66EE9A641BDB6D39009BE01E /* ClarifaiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A631BDB6D39009BE01E /* ClarifaiClient.m */; settings = {ASSET_TAGS = (); }; };
 		66EE9A681BDB7CAA009BE01E /* dairy-and-eggs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66EE9A671BDB7CAA009BE01E /* dairy-and-eggs.jpg */; settings = {ASSET_TAGS = (); }; };
 		66EE9A6A1BDB8B99009BE01E /* foods.txt in Resources */ = {isa = PBXBuildFile; fileRef = 66EE9A691BDB8B99009BE01E /* foods.txt */; settings = {ASSET_TAGS = (); }; };
-		66EE9A7A1BDBBF41009BE01E /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A741BDBBF41009BE01E /* CJSONDeserializer.m */; settings = {ASSET_TAGS = (); }; };
-		66EE9A7B1BDBBF41009BE01E /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A761BDBBF41009BE01E /* CJSONSerializer.m */; settings = {ASSET_TAGS = (); }; };
-		66EE9A7C1BDBBF41009BE01E /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A791BDBBF41009BE01E /* NSDictionary_JSONExtensions.m */; settings = {ASSET_TAGS = (); }; };
 		66EE9A7F1BDBC6F6009BE01E /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A7E1BDBC6F6009BE01E /* RecipeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		66EE9A821BDBC891009BE01E /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EE9A811BDBC891009BE01E /* Recipe.m */; settings = {ASSET_TAGS = (); }; };
 		66EE9A841BDBC944009BE01E /* RecipeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66EE9A831BDBC944009BE01E /* RecipeTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
@@ -32,6 +29,7 @@
 		66FE51261BDC2FDA00C816E7 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FE51251BDC2FDA00C816E7 /* Background.png */; settings = {ASSET_TAGS = (); }; };
 		66FE512A1BDC312B00C816E7 /* discover.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FE51291BDC312B00C816E7 /* discover.png */; settings = {ASSET_TAGS = (); }; };
 		66FE512C1BDC3A3900C816E7 /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FE512B1BDC3A3900C816E7 /* backButton.png */; settings = {ASSET_TAGS = (); }; };
+		66FE51321BDCA05E00C816E7 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FE51311BDCA05E00C816E7 /* share.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,13 +47,6 @@
 		66EE9A631BDB6D39009BE01E /* ClarifaiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClarifaiClient.m; sourceTree = "<group>"; };
 		66EE9A671BDB7CAA009BE01E /* dairy-and-eggs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dairy-and-eggs.jpg"; sourceTree = "<group>"; };
 		66EE9A691BDB8B99009BE01E /* foods.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = foods.txt; sourceTree = "<group>"; };
-		66EE9A731BDBBF41009BE01E /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
-		66EE9A741BDBBF41009BE01E /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
-		66EE9A751BDBBF41009BE01E /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
-		66EE9A761BDBBF41009BE01E /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
-		66EE9A771BDBBF41009BE01E /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
-		66EE9A781BDBBF41009BE01E /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
-		66EE9A791BDBBF41009BE01E /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
 		66EE9A7D1BDBC6F6009BE01E /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
 		66EE9A7E1BDBC6F6009BE01E /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
 		66EE9A801BDBC891009BE01E /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
@@ -68,13 +59,16 @@
 		66EE9A8B1BDBE9D8009BE01E /* DataSubscriber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataSubscriber.h; sourceTree = "<group>"; };
 		66EE9A8C1BDBED27009BE01E /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		66EE9A8D1BDBED27009BE01E /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		66EE9A8F1BDBF08D009BE01E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		66EE9A921BDBF0BB009BE01E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		66EE9A981BDBF9AD009BE01E /* Star-Empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star-Empty.png"; sourceTree = "<group>"; };
 		66EE9A991BDBF9AD009BE01E /* Star-Full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star-Full.png"; sourceTree = "<group>"; };
 		66FE51251BDC2FDA00C816E7 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		66FE51291BDC312B00C816E7 /* discover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = discover.png; path = ../../../../Downloads/discover.png; sourceTree = "<group>"; };
 		66FE512B1BDC3A3900C816E7 /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		66FE51311BDCA05E00C816E7 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+>>>>>>> dev
 		9140CCE9D89A4762C082165E /* Pods-inciBo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inciBo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-inciBo/Pods-inciBo.debug.xcconfig"; sourceTree = "<group>"; };
 		EBB6398ACB1F6FBB9E4D7F5B /* Pods-inciBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inciBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-inciBo/Pods-inciBo.release.xcconfig"; sourceTree = "<group>"; };
 		F398718230764932ECFA14EB /* libPods-inciBo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-inciBo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +107,7 @@
 		66EE9A4A1BDB6AB8009BE01E /* Soup */ = {
 			isa = PBXGroup;
 			children = (
+				66FE51311BDCA05E00C816E7 /* share.png */,
 				66FE512B1BDC3A3900C816E7 /* backButton.png */,
 				66FE51291BDC312B00C816E7 /* discover.png */,
 				66FE51251BDC2FDA00C816E7 /* Background.png */,
@@ -142,13 +137,6 @@
 				66EE9A571BDB6AB8009BE01E /* Assets.xcassets */,
 				66EE9A591BDB6AB8009BE01E /* LaunchScreen.storyboard */,
 				66EE9A5C1BDB6AB8009BE01E /* Info.plist */,
-				66EE9A731BDBBF41009BE01E /* CJSONDeserializer.h */,
-				66EE9A741BDBBF41009BE01E /* CJSONDeserializer.m */,
-				66EE9A751BDBBF41009BE01E /* CJSONSerializer.h */,
-				66EE9A761BDBBF41009BE01E /* CJSONSerializer.m */,
-				66EE9A771BDBBF41009BE01E /* JSONRepresentation.h */,
-				66EE9A781BDBBF41009BE01E /* NSDictionary_JSONExtensions.h */,
-				66EE9A791BDBBF41009BE01E /* NSDictionary_JSONExtensions.m */,
 				66EE9A4B1BDB6AB8009BE01E /* Supporting Files */,
 				66EE9A911BDBF0BB009BE01E /* Model.xcdatamodeld */,
 			);
@@ -166,7 +154,10 @@
 		C5563DCBBBEA13F954BEE7D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				66EE9A8F1BDBF08D009BE01E /* CoreData.framework */,
+=======
+>>>>>>> dev
 				F398718230764932ECFA14EB /* libPods-inciBo.a */,
 			);
 			name = Frameworks;
@@ -248,6 +239,7 @@
 				66EE9A841BDBC944009BE01E /* RecipeTableViewCell.xib in Resources */,
 				66EE9A581BDB6AB8009BE01E /* Assets.xcassets in Resources */,
 				66FE51261BDC2FDA00C816E7 /* Background.png in Resources */,
+				66FE51321BDCA05E00C816E7 /* share.png in Resources */,
 				66FE512A1BDC312B00C816E7 /* discover.png in Resources */,
 				66EE9A9A1BDBF9AD009BE01E /* Star-Empty.png in Resources */,
 				66FE512C1BDC3A3900C816E7 /* backButton.png in Resources */,
@@ -316,13 +308,10 @@
 				66EE9A641BDB6D39009BE01E /* ClarifaiClient.m in Sources */,
 				66EE9A501BDB6AB8009BE01E /* AppDelegate.m in Sources */,
 				66EE9A871BDBCA02009BE01E /* RecipeTableViewCell.m in Sources */,
-				66EE9A7B1BDBBF41009BE01E /* CJSONSerializer.m in Sources */,
 				66EE9A8E1BDBED27009BE01E /* WebViewController.m in Sources */,
 				66EE9A4D1BDB6AB8009BE01E /* main.m in Sources */,
-				66EE9A7A1BDBBF41009BE01E /* CJSONDeserializer.m in Sources */,
 				66EE9A8A1BDBDE84009BE01E /* DataManager.m in Sources */,
 				66EE9A931BDBF0BB009BE01E /* Model.xcdatamodeld in Sources */,
-				66EE9A7C1BDBBF41009BE01E /* NSDictionary_JSONExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
