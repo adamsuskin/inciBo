@@ -70,20 +70,26 @@
         return;
     }
     
-    NSMutableString *usefulTokens = [[NSMutableString alloc] initWithString:@"http://food2fork.com/api/search?key=567fe60894262b4177afe245e7ffc36f&q="];
+    NSMutableString *parameters = [[NSMutableString alloc] initWithString:@""];
     
     for (NSString *token in tokens) {
         NSRange result = [self.fileContentsString rangeOfString:[NSString stringWithFormat:@" %@ ", token]];
         if(result.location != NSNotFound) {
-            [usefulTokens appendString:[[[token lowercaseString] stringByReplacingOccurrencesOfString:@" " withString:@"%20"] stringByAppendingString:@"&"]];
+            if(![parameters isEqualToString:@""])
+                [parameters appendString:@"&"];
+            [parameters appendString:[token lowercaseString]];
+            NSLog(@"Using food parameter: %@\n", token);
         }
     }
     
-    if([usefulTokens length] > 0) {
-        usefulTokens = (NSMutableString *)[usefulTokens stringByReplacingCharactersInRange:NSMakeRange([usefulTokens length] - 1, 1) withString:@""];
+    if([parameters length] > 0) {
+        
+        parameters = (NSMutableString *)[parameters stringByReplacingOccurrencesOfString:@" " withString:@"%%20"];
+        
+        NSString *url = [NSString stringWithFormat:@"http://food2fork.com/api/search?key=567fe60894262b4177afe245e7ffc36f&q=%@", parameters];
         
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-        [manager GET:usefulTokens parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
             NSDictionary *dictionary = (NSDictionary *)responseObject;
             [self parseResults:dictionary];
             
@@ -91,6 +97,9 @@
             NSLog(@"Error: %@", error);
         }];
         
+    }
+    else {
+        //foods not found
     }
 }
 

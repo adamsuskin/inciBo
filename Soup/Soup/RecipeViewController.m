@@ -20,7 +20,6 @@
     [super viewDidLoad];
     
     [[DataManager sharedManager] addToSubscribers:self];
-    [[DataManager sharedManager] recognizeImage:[UIImage imageNamed:@"dairy-and-eggs.jpg"]];
     
     [[self tableView] setBackgroundView:nil];
     [[self tableView] setBackgroundColor:[UIColor colorWithRed:189.f/255.f green:62.f/255.f blue:58.f/255.f alpha:1]];

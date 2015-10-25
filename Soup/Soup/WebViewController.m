@@ -52,6 +52,12 @@
         [recipeLabel setTextAlignment:NSTextAlignmentCenter];
         [recipeLabel setFont:[UIFont fontWithName:@"GillSans-SemiBold" size:38.0]];
         
+        UIButton *shareButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [shareButton setBackgroundImage:[UIImage imageNamed:@"backButton.png"] forState:UIControlStateNormal];
+        [shareButton setFrame:CGRectMake(self.titleView.frame.size.width-8-45, self.titleView.frame.size.height-8-45, 45, 45)];
+        [shareButton addTarget:self action:@selector(share:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [self.titleView addSubview:shareButton];
         [self.titleView addSubview:button];
         [self.titleView addSubview:recipeLabel];
         [self.view addSubview:self.titleView];
@@ -72,6 +78,10 @@
 
 -(void)back:(id)sender {
     [[self presentingViewController] dismissViewControllerAnimated:YES completion:^{}];
+}
+
+-(void)share:(id)sender {
+    
 }
 
 - (UIStatusBarStyle) preferredStatusBarStyle {
