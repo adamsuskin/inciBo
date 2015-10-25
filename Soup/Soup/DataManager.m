@@ -73,7 +73,7 @@
     NSMutableString *usefulTokens = [[NSMutableString alloc] initWithString:@"http://food2fork.com/api/search?key=567fe60894262b4177afe245e7ffc36f&q="];
     
     for (NSString *token in tokens) {
-        NSRange result = [self.fileContentsString rangeOfString:token];
+        NSRange result = [self.fileContentsString rangeOfString:[NSString stringWithFormat:@" %@ ", token]];
         if(result.location != NSNotFound) {
             [usefulTokens appendString:[[[token lowercaseString] stringByReplacingOccurrencesOfString:@" " withString:@"%20"] stringByAppendingString:@"&"]];
         }
