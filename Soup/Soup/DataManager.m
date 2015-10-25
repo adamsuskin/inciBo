@@ -73,6 +73,7 @@
     NSMutableString *parameters = [[NSMutableString alloc] initWithString:@""];
     
     for (NSString *token in tokens) {
+        NSLog(@"Token: %@\n", token);
         NSRange result = [self.fileContentsString rangeOfString:[NSString stringWithFormat:@" %@ ", token]];
         if(result.location != NSNotFound) {
             if(![parameters isEqualToString:@""])
@@ -100,6 +101,7 @@
     }
     else {
         //foods not found
+        NSLog(@"No food parameters found in picture.\n");
     }
 }
 

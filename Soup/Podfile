@@ -3,5 +3,7 @@ platform :ios, '8.0'
 target 'inciBo' do
 
 	pod 'AFNetworking'
+	pod 'FBSDKCoreKit'
+	pod 'FBSDKShareKit'
 
 end

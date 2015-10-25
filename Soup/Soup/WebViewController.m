@@ -61,6 +61,25 @@
         [self.titleView addSubview:button];
         [self.titleView addSubview:recipeLabel];
         [self.view addSubview:self.titleView];
+        
+        self.shareView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+        self.shareView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5];
+        
+        UIView *shareContentView = [[UIView alloc] initWithFrame:CGRectMake(self.shareView.frame.size.width / 8, self.shareView.frame.size.height / 8, 3 * self.shareView.frame.size.width / 4, 3 * self.shareView.frame.size.height / 4)];
+        [shareContentView setBackgroundColor:[UIColor whiteColor]];
+        
+        FBSDKShareButton *fbButton = [[FBSDKShareButton alloc] init];
+        [fbButton setFrame:CGRectMake(shareContentView.frame.size.width / 4, shareContentView.frame.size.height / 3, shareContentView.frame.size.width / 2, 50)];
+        FBSDKShareLinkContent *linkContent = [[FBSDKShareLinkContent alloc] init];
+        [linkContent setContentTitle:[recipe title]];
+        [linkContent setContentDescription:@"Check out this great recipe I found through inciBo!"];
+        [linkContent setContentURL:[NSURL URLWithString:[recipe source_url]]];
+        [linkContent setImageURL:[NSURL URLWithString:[recipe image_url]]];
+        [fbButton setShareContent:linkContent];
+        [shareContentView addSubview:fbButton];
+        
+        [self.shareView addSubview:shareContentView];
+        [self.view addSubview:self.shareView];
 
     }
     return self;

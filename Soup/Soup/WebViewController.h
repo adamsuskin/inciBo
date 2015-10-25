@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FBSDKShareKit/FBSDKShareKit.h>
 #import "DataManager.h"
 @class Recipe;
 
@@ -17,6 +18,7 @@
 @property (strong, nonatomic) UIView *titleView;
 @property (strong, nonatomic) Recipe *recipe;
 @property (strong, nonatomic) UIActivityIndicatorView *activityView;
+@property (strong, nonatomic) UIView *shareView;
 
 -(id)initWithRecipe:(Recipe *)recipe andFrame:(CGRect)frame;
 
