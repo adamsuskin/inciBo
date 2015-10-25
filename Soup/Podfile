@@ -1,5 +1,7 @@
-platform :ios, ‘8.0’
+platform :ios, '8.0'
 
-target ‘Soup’ do
-	pod ‘AFNetworking’
+target 'inciBo' do
+
+	pod 'AFNetworking'
+
 end
