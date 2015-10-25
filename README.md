@@ -9,4 +9,4 @@ Not only that! Share your favorite recipes on Facebook or Twitter!
 The "in" stands for "inspire," and the "ciBo" means "food" in Italian. We want to help inspire the chef in you.
 
 ##Dependencies
-Make sure to run pod install for the Cocoapods the project depends upon!
+Make sure to run `pod install` for the Cocoapods the project depends upon!
