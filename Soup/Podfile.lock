@@ -37,16 +37,19 @@ PODS:
     - FBSDKCoreKit/arc
   - FBSDKShareKit (4.7.0):
     - FBSDKCoreKit
+  - STTwitter (0.2.2)
 
 DEPENDENCIES:
   - AFNetworking
   - FBSDKCoreKit
   - FBSDKShareKit
+  - STTwitter
 
 SPEC CHECKSUMS:
   AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
   Bolts: 0e9bce58b9b9f5e8a7a4d47b16d2fabec289072b
   FBSDKCoreKit: eb580bfc2040ad44f4c0b4f4d0befb1d35bce59c
   FBSDKShareKit: 1f927bb05e4d36a99d5d5bf2f4b1ff294ce3e15c
+  STTwitter: eb85d8770ddb0f8989f341cf41ea875e90ac6e7f
 
 COCOAPODS: 0.39.0

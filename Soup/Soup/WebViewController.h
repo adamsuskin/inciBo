@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <FBSDKShareKit/FBSDKShareKit.h>
+#import <STTwitter/STTwitter.h>
 #import "DataManager.h"
 @class Recipe;
 
@@ -19,6 +20,9 @@
 @property (strong, nonatomic) Recipe *recipe;
 @property (strong, nonatomic) UIActivityIndicatorView *activityView;
 @property (strong, nonatomic) UIView *shareView;
+@property (strong, nonatomic) UIButton *fbButton;
+@property (strong, nonatomic) UIButton *twButton;
+@property (strong, nonatomic) STTwitterAPI *twitter;
 
 -(id)initWithRecipe:(Recipe *)recipe andFrame:(CGRect)frame;
 
