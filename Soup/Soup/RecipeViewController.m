@@ -107,7 +107,7 @@
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
         
-    Recipe *recipe = [[[DataManager sharedManager] recipes] objectAtIndex:indexPath.row];
+    Recipe *recipe = [[[DataManager sharedManager] recipes] objectAtIndex:indexPath.section];
     
     WebViewController *viewController = [[WebViewController alloc] initWithRecipe:recipe andFrame:self.view.frame];
     
