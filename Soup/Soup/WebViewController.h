@@ -20,6 +20,7 @@
 @property (strong, nonatomic) Recipe *recipe;
 @property (strong, nonatomic) UIActivityIndicatorView *activityView;
 @property (strong, nonatomic) UIView *shareView;
+@property (strong, nonatomic) UIView *shareContentView;
 @property (strong, nonatomic) UIButton *fbButton;
 @property (strong, nonatomic) UIButton *twButton;
 @property (strong, nonatomic) STTwitterAPI *twitter;

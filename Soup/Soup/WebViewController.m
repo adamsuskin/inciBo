@@ -57,7 +57,7 @@
         
         UIButton *shareButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [shareButton setBackgroundImage:[UIImage imageNamed:@"share.png"] forState:UIControlStateNormal];
-        [shareButton setFrame:CGRectMake(self.titleView.frame.size.width-8-45, self.titleView.frame.size.height-8-45, 45, 45)];
+        [shareButton setFrame:CGRectMake(self.titleView.frame.size.width-8-45, self.titleView.frame.size.height-8-35, 45, 35)];
         [shareButton addTarget:self action:@selector(share:) forControlEvents:UIControlEventTouchUpInside];
         
         [self.titleView addSubview:shareButton];
@@ -68,18 +68,18 @@
         self.shareView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
         self.shareView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.85];
         
-        UIView *shareContentView = [[UIView alloc] initWithFrame:CGRectMake(self.shareView.frame.size.width / 8, self.shareView.frame.size.height / 4, 3 * self.shareView.frame.size.width / 4, self.shareView.frame.size.height / 2)];
-        [shareContentView setBackgroundColor:[UIColor colorWithRed:1 green:88.f/255.f blue:79.f/255.f alpha:1]];
-        shareContentView.layer.cornerRadius = 20;
-        shareContentView.layer.masksToBounds = YES;
+        self.shareContentView = [[UIView alloc] initWithFrame:CGRectMake(self.shareView.frame.size.width / 8, self.shareView.frame.size.height / 4, 3 * self.shareView.frame.size.width / 4, self.shareView.frame.size.height / 2)];
+        [self.shareContentView setBackgroundColor:[UIColor colorWithRed:1 green:88.f/255.f blue:79.f/255.f alpha:1]];
+        self.shareContentView.layer.cornerRadius = 20;
+        self.shareContentView.layer.masksToBounds = YES;
         
-        UILabel *shareLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, shareContentView.frame.size.height / 12, shareContentView.frame.size.width, shareContentView.frame.size.height / 3)];
+        UILabel *shareLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.shareContentView.frame.size.height / 12, self.shareContentView.frame.size.width, self.shareContentView.frame.size.height / 3)];
         [shareLabel setNumberOfLines:2];
         [shareLabel setText:@"Share With Friends"];
         [shareLabel setTextAlignment:NSTextAlignmentCenter];
         [shareLabel setTextColor:[UIColor whiteColor]];
         [shareLabel setFont:[UIFont fontWithName:@"GillSans-Bold" size:30.0]];
-        [shareContentView addSubview:shareLabel];
+        [self.shareContentView addSubview:shareLabel];
         
         self.fbButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [[self.fbButton titleLabel] setText:@"Facebook"];
@@ -87,9 +87,9 @@
         [[self.fbButton titleLabel] setTextColor:[UIColor whiteColor]];
         [self.fbButton setTitle:@"Facebook" forState:UIControlStateNormal];
         [[self.fbButton titleLabel] setFont:[UIFont fontWithName:@"GillSans-SemiBold" size:30.0]];
-        [self.fbButton setFrame:CGRectMake(0, shareContentView.frame.size.height / 2, shareContentView.frame.size.width, shareContentView.frame.size.height / 6)];
+        [self.fbButton setFrame:CGRectMake(0, self.shareContentView.frame.size.height / 2, self.shareContentView.frame.size.width, self.shareContentView.frame.size.height / 6)];
         [self.fbButton addTarget:self action:@selector(fb:) forControlEvents:UIControlEventTouchUpInside];
-        [shareContentView addSubview:self.fbButton];
+        [self.shareContentView addSubview:self.fbButton];
         
         self.twButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [[self.twButton titleLabel] setText:@"Twitter"];
@@ -97,25 +97,38 @@
         [[self.twButton titleLabel] setTextColor:[UIColor whiteColor]];
         [self.twButton setTitle:@"Twitter" forState:UIControlStateNormal];
         [[self.twButton titleLabel] setFont:[UIFont fontWithName:@"GillSans-SemiBold" size:30.0]];
-        [self.twButton setFrame:CGRectMake(0, 2 * shareContentView.frame.size.height / 3, shareContentView.frame.size.width, shareContentView.frame.size.height / 6)];
+        [self.twButton setFrame:CGRectMake(0, 2 * self.shareContentView.frame.size.height / 3, self.shareContentView.frame.size.width, self.shareContentView.frame.size.height / 6)];
         [self.twButton addTarget:self action:@selector(tw:) forControlEvents:UIControlEventTouchUpInside];
-        [shareContentView addSubview:self.twButton];
+        [self.shareContentView addSubview:self.twButton];
 
         UIButton *hideShareButton = [UIButton buttonWithType:UIButtonTypeCustom];
         hideShareButton.backgroundColor = [UIColor whiteColor];
-        hideShareButton.frame = CGRectMake(shareContentView.frame.size.width - 30, -30, 90, 90);
+        hideShareButton.frame = CGRectMake(self.shareContentView.frame.size.width - 30, -30, 90, 90);
         hideShareButton.layer.cornerRadius = hideShareButton.frame.size.width / 2;
         hideShareButton.clipsToBounds = YES;
         [hideShareButton addTarget:self action:@selector(hideShare:) forControlEvents:UIControlEventTouchUpInside];
-        [shareContentView addSubview:hideShareButton];
+        [self.shareContentView addSubview:hideShareButton];
         
-        [self.shareView addSubview:shareContentView];
+        [self.shareView addSubview:self.shareContentView];
         [self.shareView setHidden:YES];
 
+        UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
+        [tapGestureRecognizer setNumberOfTouchesRequired:1];
+        
+        [self.shareView addGestureRecognizer:tapGestureRecognizer];
+        
         [self.view addSubview:self.shareView];
 
     }
     return self;
+}
+
+-(void)tap:(UITapGestureRecognizer *)tapGestureRecognizer {
+    CGPoint touchPoint = [tapGestureRecognizer locationInView:self.shareContentView];
+    if(touchPoint.x < 0 || touchPoint.x > self.shareContentView.frame.size.width)
+        [self hideShare:nil];
+    else if(touchPoint.y < 0 || touchPoint.y > self.shareContentView.frame.size.height)
+        [self hideShare:nil];
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView {
