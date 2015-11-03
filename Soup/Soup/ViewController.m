@@ -19,16 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[[self navigationController] navigationBar] setHidden:YES];
+    
     UIImageView *backscreen = [[UIImageView alloc] initWithFrame:[[self view] frame]];
     [backscreen setImage:[UIImage imageNamed:@"Background.png"]];
     [[self view] addSubview:backscreen];
     
     self.hasPicked = NO;
     
-}
-
-- (UIStatusBarStyle) preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
 }
 
 - (void)viewDidAppear:(BOOL)animated {

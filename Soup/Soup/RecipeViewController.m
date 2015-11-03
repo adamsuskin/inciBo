@@ -23,6 +23,17 @@
     
     [[self tableView] setBackgroundView:nil];
     [[self tableView] setBackgroundColor:[UIColor colorWithRed:189.f/255.f green:62.f/255.f blue:58.f/255.f alpha:1]];
+    
+    [[[self navigationController] navigationBar] setBarTintColor:[UIColor colorWithRed:1 green:88.f/255.f blue:79.f/255.f alpha:1]];
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemReply target:self action:@selector(back:)];
+    [backItem setTintColor:[UIColor whiteColor]];
+    [[self navigationItem] setLeftBarButtonItem:backItem];
+    
+    [self setTitle:@"Discover"];
+    
 }
 
 - (IBAction)back:(id)sender {
@@ -38,11 +49,6 @@
 -(void)dataUpdated {
     [[self tableView] reloadData];
 }
-
-- (UIStatusBarStyle) preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
-}
-
 #pragma mark - Table View Data Source
 
 -(void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
